@@ -10,5 +10,7 @@ To run:
 Make Sure to add your Google API Key in MapViewDemo.js and AndroidManifest.xml
 
 yarn install
+
 npm start
+
 react-native run-android
