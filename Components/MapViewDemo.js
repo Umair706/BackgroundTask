@@ -104,7 +104,7 @@ export default class MapViewDemo extends Component {
   async getDirections(startLoc, destinationLoc) {
     try {
       let resp = await fetch(
-        `https://maps.googleapis.com/maps/api/directions/json?origin=${startLoc}&destination=${destinationLoc}&key=AIzaSyDHL4KaaTEIrgniTecFQAjGREWLfOqR7OM`
+        `https://maps.googleapis.com/maps/api/directions/json?origin=${startLoc}&destination=${destinationLoc}&key=Add your API KEY HERE`
       );
       let respJson = await resp.json();
       let points = Polyline.decode(respJson.routes[0].overview_polyline.points);
